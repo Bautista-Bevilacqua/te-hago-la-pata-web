@@ -54,7 +54,7 @@ export default function RootLayout({
       lang="es"
       className={`${serif.variable} ${sans.variable} antialiased scroll-smooth`}
     >
-      <body className="flex flex-col font-sans bg-brand-white text-brand-black overflow-x-hidden">
+      <body className="flex flex-col font-sans bg-brand-black text-brand-black overflow-x-hidden">
         <Navbar />
         {children}
       </body>
