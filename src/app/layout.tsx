@@ -3,6 +3,14 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google"; // Fuentes más elegantes
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#111111",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 const serif = Playfair_Display({
   subsets: ["latin"],
