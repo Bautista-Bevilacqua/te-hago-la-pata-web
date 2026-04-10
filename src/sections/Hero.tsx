@@ -5,7 +5,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-[100lvh] w-full relative flex items-center justify-center overflow-hidden">
+    <section className="min-h-[100vh] pb-24 w-full relative flex items-center justify-center overflow-hidden bg-brand-black">
+      
       <Image
         src="/images/bg-hero-hd.jpeg"
         alt="Pata de cerdo asada al estilo artesanal"
