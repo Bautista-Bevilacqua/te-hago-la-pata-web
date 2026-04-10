@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="py-24 bg-brand-white text-brand-black">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-16 bg-white rounded-[var(--radius-xl)] shadow-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-16 bg-white rounded-(--radius-xl) shadow-xl overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

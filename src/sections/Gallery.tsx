@@ -82,7 +82,7 @@ export default function Gallery() {
             <div
               key={img.id}
               // El 'relative' acá ya estaba, es el que hace que el 'fill' de la imagen funcione sin tirar error
-              className="relative w-[85vw] md:w-[45vw] lg:w-[30vw] h-[400px] md:h-[500px] rounded-[var(--radius-xl)] overflow-hidden shadow-2xl border border-gray-100 shrink-0 group"
+              className="relative w-[85vw] md:w-[45vw] lg:w-[30vw] h-100 md:h-125 rounded-(--radius-xl) overflow-hidden shadow-2xl border border-gray-100 shrink-0 group"
             >
               {/* Fallback visual que aparece un microsegundo antes de que cargue la foto */}
               <div className="absolute inset-0 bg-brand-brown/10 animate-pulse z-0" />
