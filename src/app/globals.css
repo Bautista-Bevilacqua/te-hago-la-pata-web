@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 1. Definimos las variables de fuente que vienen del layout.tsx */
+@theme {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  /* 2. Definimos nuestra paleta de colores de marca */
+  --color-brand-black: #121212;      /* Negro elegante */
+  --color-brand-white: #F9F7F2;      /* Blanco hueso/crema */
+  --color-brand-brown-light: #D2B48C;
+  --color-brand-brown: #5D2E0A;       /* El marrón principal THLP */
+  --color-brand-brown-dark: #3B1D06;
+
+  /* 3. Ajustamos los radios de borde para que sea todo más fino */
+  --radius-xl: 1.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* 4. Estilos base para que la página ya nazca con el look THLP */
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black font-sans antialiased;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1, h2, h3, h4 {
+    @apply font-serif; /* Todos los títulos por defecto usan la Serif elegante */
+  }
 }
