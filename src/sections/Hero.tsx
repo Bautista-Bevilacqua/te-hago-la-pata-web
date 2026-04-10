@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-dvh w-full relative flex items-center justify-center overflow-hidden">
+    <section className="min-h-[100lvh] w-full relative flex items-center justify-center overflow-hidden">
       <Image
         src="/images/bg-hero-hd.jpeg"
         alt="Pata de cerdo asada al estilo artesanal"
@@ -13,9 +13,7 @@ export default function Hero() {
         priority
         className="object-cover object-center"
       />
-
       <div className="absolute inset-0 bg-brand-black/50 z-10" />
-
       <div className="container mx-auto px-6 z-20 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +49,6 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
-
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
